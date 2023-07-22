@@ -1,0 +1,34 @@
+{
+  "name": "animous",
+  "version": "1.0.0",
+  "description": "XMLHttpRequest library",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesuspereraaracil/animous.git"
+  },
+  "keywords": [
+    "xmlhttprequest",
+    "fetch",
+    "rest"
+  ],
+  "author": "JPereraAracil",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jesuspereraaracil/animous/issues"
+  },
+  "homepage": "https://github.com/jesuspereraaracil/animous#readme",
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "xhr2": "^0.2.1"
+  }
+}
