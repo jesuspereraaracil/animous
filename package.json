@@ -4,10 +4,9 @@
   "description": "XMLHttpRequest library",
   "main": "build/index.js",
   "scripts": {
-    "test": "jest",
-    "build": "tsc",
-    "prestart": "npm run build",
-    "start": "node build/index.js"
+    "build:tsc": "tsc",
+    "build:js": "bun build src/index.ts --outdir lib",
+    "build": "bun run build:tsc && bun run build:js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +22,13 @@
   "bugs": {
     "url": "https://github.com/jesuspereraaracil/animous/issues"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/jesuspereraaracil/animous#readme",
   "devDependencies": {
-    "jest": "^29.6.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.3.3",
+    "bun-types": "latest"
   },
   "dependencies": {
     "xhr2": "^0.2.1"
