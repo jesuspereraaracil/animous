@@ -19,11 +19,14 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
 
+      - name: Install bun
+        uses: oven-sh/setup-bun@v1
+
       - name: Install dependencies
-        run: npm ci
+        run: bun install
 
       - name: Build package
-        run: npm run build # Replace this with the build command for your package
+        run: bun run build
 
       - name: Publish to npm
         run: npm publish --provenance --access public
