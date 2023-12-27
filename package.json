@@ -1,6 +1,6 @@
 {
   "name": "@jpereraaracil/animous",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "XMLHttpRequest library",
   "main": "build/index.js",
   "scripts": {
